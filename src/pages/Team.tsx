@@ -1,4 +1,7 @@
 import './Page.css';
+import zachImage from '../assets/zach.jpeg';
+import lutherImage from '../assets/luther.jpeg';
+import bradyImage from '../assets/brady.jpeg';
 
 const Team = () => {
   return (
@@ -10,8 +13,7 @@ const Team = () => {
         <div className="team-grid">
           <div className="glass-card team-member-card">
             <div className="team-member-image">
-              {/* Placeholder for team member image */}
-              <img src={'src/assets/zach.jpeg'} alt="Zach Redder" />
+              <img src={zachImage} alt="Zach Redder" />
             </div>
             <h3>Zach Redder</h3>
             <p>
@@ -21,7 +23,7 @@ const Team = () => {
           
           <div className="glass-card team-member-card">
             <div className="team-member-image">
-            <img src={'src/assets/luther.jpeg'} alt="Luther David" />
+              <img src={lutherImage} alt="Luther David" />
             </div>
             <h3>Luther David</h3>
             <p>
@@ -31,7 +33,7 @@ const Team = () => {
           
           <div className="glass-card team-member-card">
             <div className="team-member-image">
-                <img src={'src/assets/brady.jpeg'} alt="Brady Swiech" />
+              <img src={bradyImage} alt="Brady Swiech" />
             </div>
             <h3>Brady Swiech</h3>
             <p>

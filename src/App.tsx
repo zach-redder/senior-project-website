@@ -10,8 +10,10 @@ import Resources from './pages/Resources';
 import './App.css';
 
 function App() {
+  const basename = import.meta.env.PROD ? '/senior-project-website' : '';
+  
   return (
-    <Router basename="/senior-project-website">
+    <Router basename={basename}>
       <div className="app">
         <Navbar />
         <main className="main-content">

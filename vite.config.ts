@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/senior-project-website/',
+  base: process.env.NODE_ENV === 'production' ? '/senior-project-website/' : '/',
   build: {
     outDir: 'dist',
   },

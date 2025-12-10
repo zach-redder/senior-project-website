@@ -1,4 +1,5 @@
 import './Page.css';
+import reportPdf from '../assets/Senior_Project_Report.pdf';
 
 const Report = () => {
   return (
@@ -12,7 +13,7 @@ const Report = () => {
           
           <div className="report-downloads">
             <a 
-              href="src/assets/Senior_Project_Report.pdf"
+              href={reportPdf}
               download="Senior_Project_Report.pdf"
               className="btn btn-primary"
               target="_blank"
